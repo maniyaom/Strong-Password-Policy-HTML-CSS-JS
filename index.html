@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Your Password Strength</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="login-form">
+            <div class="form-heading">Test Your Password</div>
+            <input type="text" name="username" placeholder="Username" id="username" class="inputFields"
+                autocomplete="off">
+            <input type="password" name="password" placeholder="Password" id="password" class="inputFields"
+                autocomplete="off">
+            <input type="checkbox" onclick="showPassword()" id="showPasskey"><label for="showPasskey" id="show-passkey-label">Show Password</label>
+            <div id="output-message"></div>
+            <button onclick="validatePassword()" id="submitBtn">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
